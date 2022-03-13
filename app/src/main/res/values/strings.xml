@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Motivation</string>
+    <string name="txt_tv_title">Vamos começar?</string>
+    <string name="hint_edt_nome">Qual seu nome?</string>
+    <string name="txt_btn_salvar">Salvar</string>
+    <string name="txt_tv_hello">Olá</string>
+</resources>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearlayout_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageview_all"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_infinite"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/imageview_happy"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_happy"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/imageview_morning"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_sun"
+            app:tint="@color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textview_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearlayout_menu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:textSize="18sp"
+        tools:text="Olá Fulano!" />
+
+    <!--<TextView
+        android:id="@+id/textview_hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearlayout_menu"
+        android:layout_alignStart="@id/textview_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="@string/txt_tv_hello"
+        android:textSize="18sp" />-->
+
+    <TextView
+        android:id="@+id/textview_phrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="32dp"
+        android:layout_margin="16dp"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        tools:text="Insanidade é fazer sempre a mesma coisa e esperar um resultado diferente." />
+    <View
+        android:layout_width="128dp"
+        android:layout_height="3dp"
+        android:layout_below="@id/textview_phrase"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:background="@color/colorAccent"/>
+
+    <Button
+        android:id="@+id/button_new_phrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nova Frase"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:padding="16dp"
+        android:background="@drawable/ripple_button"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>
